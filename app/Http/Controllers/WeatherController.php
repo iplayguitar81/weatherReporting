@@ -58,6 +58,7 @@ class WeatherController extends Controller
             $visitor->user_agent = $user_agent;
             $visitor->request_time = date((strtotime('Y-m-d H:i:s', $request_time)));
             $visitor->save();
+
 //        }
 //
 //        catch (\Exception $ex) {
