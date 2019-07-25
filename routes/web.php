@@ -65,4 +65,5 @@ use Illuminate\Support\Facades\Cache;
 
 
 
+
 Route::get('/weather', ['as' => 'weather', 'uses' => 'WeatherController@forecast']);
