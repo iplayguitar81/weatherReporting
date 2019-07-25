@@ -1,4 +1,4 @@
-{{--<h1>Weather Forecast <span class="text-muted">|</span> {{($geoIParr['city'].', '.$geoIParr['state'])}}</h1>--}}
+<h1>Weather Forecast <span class="text-muted">|</span> {{($geoIParr['city'].', '.$geoIParr['state'])}}</h1>
 
 
 {{--{{dd($geoIParr)}}--}}
