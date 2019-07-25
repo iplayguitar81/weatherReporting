@@ -56,7 +56,7 @@ class WeatherController extends Controller
             $visitor->ip = $userIP;
             $visitor->request_method = $request_method;
             $visitor->user_agent = $user_agent;
-            $visitor->request_time = $request_time;
+            $visitor->request_time = date((strtotime('Y-m-d H:i:s', $request_time)));
             $visitor->save();
 //        }
 //
