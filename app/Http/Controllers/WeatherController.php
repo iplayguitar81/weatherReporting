@@ -71,23 +71,23 @@ class WeatherController extends Controller
 
         //declare empty array to hold dates and array of arrays to store individual forecast data from API call...
 
-        $forecastDates = array();
+ //       $forecastDates = array();
 
 
 
 //loop through forecastData and grab dates...
-foreach($forecastData['list'] as  $testerson) {
+//foreach($forecastData['list'] as  $testerson) {
 
-    $dateForecast = date('Y-m-d',strtotime($testerson['dt_txt']));
+    //$dateForecast = date('Y-m-d',strtotime($testerson['dt_txt']));
 
 
 
     //tack on to the other one...
-    array_push($forecastDates, $dateForecast);
+//    array_push($forecastDates, $dateForecast);
    // $forecastDates[$dateForecast] = null;
    //array_push($forecastDates, $forecastDates[$dateForecast]= null);
 
-}
+//}
 
         //$forecastDates = array_unique($forecastDates);
 
