@@ -9,7 +9,7 @@
 
 @foreach( $forecastData['list'] as $forecast)
 
-    <div class="col-2">
+    <div class="col-lg-2 col-md-3 col-sm-10 col-10">
 
 
     <h5 class="">{{date('l F dS Y gA',strtotime($forecast['dt_txt'])) }}</h5>
