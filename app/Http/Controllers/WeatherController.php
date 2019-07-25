@@ -21,7 +21,7 @@ class WeatherController extends Controller
         // check if cache has forecastData from the last 24 hours, if not then call the requestWeather function...
         // if something goes wrong catch the exception and display error message for user
 
-//        try {
+        try {
             //TO DO: check if values are null...
             //gather user's ip address from laravel...
             $userIP = request()->ip();
@@ -59,14 +59,14 @@ class WeatherController extends Controller
             $visitor->request_time = date('Y-m-d H:i:s', $request_time);
             $visitor->save();
 
-//        }
-//
-//        catch (\Exception $ex) {
-//
-//            //display error message if something goes wrong with API call or recalling cached values...
-//            return back()->withError('Sorry!  There is not a forecast available at this time.  Something went wrong.  Please try again later.');
-//
-//        }
+        }
+
+        catch (\Exception $ex) {
+
+            //display error message if something goes wrong with API call or recalling cached values...
+            return back()->withError('Sorry!  There is not a forecast available at this time.  Something went wrong.  Please try again later.');
+
+        }
 
         //$forecastTest
 
