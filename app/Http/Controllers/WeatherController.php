@@ -98,7 +98,7 @@ class WeatherController extends Controller
         //$forecastDates = collect($forecastDates);
      //   dd($forecastDates);
 
-        return view('weather2', compact('geoIParr','forecastData', 'forecastDates'));
+        return view('weather2', compact('geoIParr','forecastData'));
     }
 
 
