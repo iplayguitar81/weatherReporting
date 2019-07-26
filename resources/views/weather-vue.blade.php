@@ -43,7 +43,7 @@
 
             <p>Temp:  @{{forecast.main.temp}}&#8457;</p>
             <p>Max Temp:  @{{forecast.main.temp_max}}&#8457;</p>
-            <p>Max Temp:  @{{forecast.main.temp_max}}&#8457;</p>
+            <p>Min Temp:  @{{forecast.main.temp_min}}&#8457;</p>
             <p>Pressure:  @{{forecast.main.pressure}}</p>
             <p>Sea Level:  @{{forecast.main.sea_level}}</p>
             <p>Ground Level:  @{{forecast.main.grnd_level}}</p>
