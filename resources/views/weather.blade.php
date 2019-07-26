@@ -1,5 +1,6 @@
 @extends('layout.layout')
 
+@section('content')
 <div class="container">
 
     <h1>Weather Forecast <span class="text-muted">|</span> {{($geoIParr['city'].', '.$geoIParr['state'])}}</h1>
@@ -42,4 +43,6 @@
 
 
 </div>
+
+@endsection
 
