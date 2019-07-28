@@ -15,14 +15,13 @@ class WeatherController extends Controller
     public function forecast(){
 
         //put in place to test if cache was working properly and for troubleshooting purposes...
-        //Cache::flush();
+       // Cache::flush();
 
         //TRY try to get user ip, get the location from the geoIP package to gather information location,
         // check if cache has forecastData from the last 24 hours, if not then call the requestWeather function...
         // if something goes wrong catch the exception and display error message for user
 
         try {
-            //TO DO: check if values are null...
             //gather user's ip address from laravel...
             $userIP = request()->ip();
 
@@ -116,6 +115,7 @@ class WeatherController extends Controller
         //TRY try to get user ip, get the location from the geoIP package to gather information location,
         // check if cache has forecastData from the last 24 hours, if not then call the requestWeather function...
         // if something goes wrong catch the exception and display error message for user
+
 
         try {
             //TO DO: check if values are null...
