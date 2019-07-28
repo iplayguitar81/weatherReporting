@@ -96,7 +96,7 @@ class WeatherController extends Controller
         $client = new Client();
 
         //pass in user's latitude and longitude based on geoIP package location...
-        $url = 'api.openweathermap.org/data/2.5/forecast?q='.$userLatitude.'&lon='.$userLongitude.'&units=imperial&APPID='.$ACCESS_TOKEN.'';
+        $url = 'api.openweathermap.org/data/2.5/forecast?lat='.$userLatitude.'&lon='.$userLongitude.'&units=imperial&APPID='.$ACCESS_TOKEN.'';
 
         $response = $client->request('GET', $url);
 
@@ -161,7 +161,7 @@ class WeatherController extends Controller
 
         catch (\Exception $ex) {
 
-            //display error message if something goes wrong with API call or recalling cached values...
+         //   display error message if something goes wrong with API call or recalling cached values...
             return back()->withError('Sorry!  There is not a forecast available at this time.  Something went wrong.  Please try again later.');
 
         }

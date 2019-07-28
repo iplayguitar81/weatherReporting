@@ -103,9 +103,12 @@
                     .get(url)
                     .then(response => {
 
+                        console.log(response.data);
                         //set forecasts array to list object from response...
                         this.forecasts = response.data.list;
                         this.cityByIp = response.data.city.name;
+
+
 
                         //testing by logging values to console...
                       //  console.log(response.data);
